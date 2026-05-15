@@ -6,13 +6,9 @@
       <class name="tests.testcase">
         <methods>
           <include name="setup"/>
-          <include name="TC15_firstResultDisplayed"/>
           <include name="tearDown"/>
-          <include name="TC6_addToCartButtonVisible"/>
           <include name="endReport"/>
-          <include name="TC7_addToCart"/>
-          <include name="TC5_clickFirstProduct"/>
-          <include name="TC20_pageLoadCheck"/>
+          <include name="TC5_refreshPage"/>
         </methods>
       </class> <!-- tests.testcase -->
     </classes>

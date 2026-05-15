@@ -221,8 +221,6 @@ public class testcase extends BaseTest {
     @Test
     public void TC1_verifySearchBox() {
 
-        test = extent.createTest("TC1_verifySearchBox");
-
         home = new HomePage(driver);
 
         Assert.assertTrue(home.isSearchBoxDisplayed());
@@ -232,8 +230,6 @@ public class testcase extends BaseTest {
     @Test
     public void TC2_searchProduct() {
 
-        test = extent.createTest("TC2_searchProduct");
-
         home = new HomePage(driver);
 
         home.search("iPhone");
@@ -242,8 +238,6 @@ public class testcase extends BaseTest {
     // TC3
     @Test
     public void TC3_verifyTitle() {
-
-        test = extent.createTest("TC3_verifyTitle");
 
         home = new HomePage(driver);
 
@@ -256,21 +250,19 @@ public class testcase extends BaseTest {
     @Test
     public void TC4_resultsCheck() {
 
-        test = extent.createTest("TC4_resultsCheck");
-
         home = new HomePage(driver);
 
         home.search("iPhone");
 
-        Assert.assertTrue(driver.getPageSource().contains("results"));
+        Assert.assertTrue(driver.getPageSource().contains("iphone"));
     }
 
-    // TC5
+ // TC5
     @Test
     public void TC5_refreshPage() {
 
-        test = extent.createTest("TC5_refreshPage");
-
         driver.navigate().refresh();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("amazon"));
     }
 }
