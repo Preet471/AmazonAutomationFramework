@@ -24,7 +24,6 @@
 //        return extent;
 //    }
 //}
-
 package base;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -38,12 +37,18 @@ public class ReportManager {
 
         if (extent == null) {
 
-            ExtentSparkReporter spark = new ExtentSparkReporter("amazon-report.html");
+            String timeStamp = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss")
+            .format(new java.util.Date());
+
+            ExtentSparkReporter spark =
+            new ExtentSparkReporter("reports/amazon-report_" + timeStamp + ".html");
 
             extent = new ExtentReports();
+
             extent.attachReporter(spark);
 
             extent.setSystemInfo("Project", "Amazon POM Framework");
+
             extent.setSystemInfo("Tester", "QA Automation");
         }
 
