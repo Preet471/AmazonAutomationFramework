@@ -240,6 +240,8 @@ public class BaseTest {
     @AfterSuite
     public void endReport() {
 
-        extent.flush();
+    	if (extent != null) {
+    	    extent.flush();
+    	}
     }
 }
