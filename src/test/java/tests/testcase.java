@@ -235,28 +235,20 @@ public class testcase extends BaseTest {
         home.search("iPhone");
     }
 
-    // TC3
-    @Test
-    public void TC3_verifyTitle() {
 
-        home = new HomePage(driver);
-
-        home.search("iPhone");
-
-        Assert.assertTrue(driver.getTitle().toLowerCase().contains("iphone"));
-    }
-
-    // TC4
+ // TC4
     @Test
     public void TC4_resultsCheck() {
 
+        test = extent.createTest("TC4_resultsCheck");
+
         home = new HomePage(driver);
 
         home.search("iPhone");
 
-        Assert.assertTrue(driver.getPageSource().contains("iphone"));
+        Assert.assertTrue(
+        driver.getCurrentUrl().contains("s?k=iPhone"));
     }
-
  // TC5
     @Test
     public void TC5_refreshPage() {

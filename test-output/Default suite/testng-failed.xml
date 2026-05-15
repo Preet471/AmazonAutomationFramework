@@ -8,7 +8,7 @@
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="endReport"/>
-          <include name="TC5_refreshPage"/>
+          <include name="TC3_verifyTitle"/>
         </methods>
       </class> <!-- tests.testcase -->
     </classes>
