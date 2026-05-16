@@ -22,8 +22,7 @@ public class ReportManager {
 
             // Latest report for Jenkins
             ExtentSparkReporter latestSpark =
-            		new ExtentSparkReporter("reports/AmazonReport.html");
-
+            new ExtentSparkReporter("amazon-report.html");
 
             extent = new ExtentReports();
 
@@ -33,7 +32,6 @@ public class ReportManager {
 
             extent.setSystemInfo("Tester", "QA Automation");
         }
-        //jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 
         return extent;
     }
