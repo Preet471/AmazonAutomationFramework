@@ -21,8 +21,8 @@ public class ReportManager {
             "reports/amazon-report_" + timeStamp + ".html");
 
             // Latest report for Jenkins
-           ExtentSparkReporter latestSpark =
-            		new ExtentSparkReporter("reports/AmazonReport.html");
+                       ExtentSparkReporter latestSpark =
+            new ExtentSparkReporter("amazon-report.html");
 
             extent = new ExtentReports();
 
