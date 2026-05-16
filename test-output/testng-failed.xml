@@ -7,11 +7,8 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="TC4_resultsCheck"/>
           <include name="endReport"/>
-          <include name="TC5_refreshPage"/>
-          <include name="TC1_verifySearchBox"/>
-          <include name="TC2_searchProduct"/>
+          <include name="TC4_resultsCheck"/>
         </methods>
       </class> <!-- tests.testcase -->
     </classes>

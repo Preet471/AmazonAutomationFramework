@@ -42,6 +42,18 @@
     <artifactId>commons-io</artifactId>
     <version>2.11.0</version>
 </dependency>
+<!-- REST Assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.4.0</version>
+</dependency>
+<!-- JSON Path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>5.4.0</version>
+</dependency>
     </dependencies>
     
 <build>
