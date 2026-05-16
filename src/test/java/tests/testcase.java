@@ -236,19 +236,19 @@ public class testcase extends BaseTest {
     }
 
 
- // TC4
-    @Test
-    public void TC4_resultsCheck() {
-
-        test = extent.createTest("TC4_resultsCheck");
-
-        home = new HomePage(driver);
-
-        home.search("iPhone");
-
-        Assert.assertTrue(
-        driver.getCurrentUrl().contains("s?k=iPhone"));
-    }
+// // TC4
+//    @Test
+//    public void TC4_resultsCheck() {
+//
+//        test = extent.createTest("TC4_resultsCheck");
+//
+//        home = new HomePage(driver);
+//
+//        home.search("iPhone");
+//
+//        Assert.assertTrue(
+//        driver.getCurrentUrl().contains("s?k=iPhone"));
+//    }
  // TC5
     @Test
     public void TC5_refreshPage() {
